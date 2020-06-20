@@ -14,12 +14,96 @@
     <body class = "light">
         <div class = "container">
             <div class = "row">
+                <div class = "col border-left border-right py-2">
 
-                <div class = "col-6">
-                    
+                    <div class = "row border-bottom">
+
+                        <div class = "col">
+                            <!-- Top Bar -->
+                            <div class = "row border-bottom">
+                                <div class = "col">
+                                    <h1>
+                                        Home
+                                    </h1>
+                                </div>
+                            </div>
+
+                            <!-- Tweet Area -->
+                            <div class = "row py-3">
+                                <!-- User Icon -->
+                                <div class = "col-1 d-none d-sm-block">
+                                    <div class = "col-1">
+                                        <i class = "far fa-user fa-lg"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Vertical Separator -->
+                                <div class = "col d-none d-sm-block">
+                                    <!-- Tweet Input -->
+                                    <div class = "row">
+
+                                        <div class = "col">
+                                            <div class = "form-group">
+                                                <div class = "input-group flex">
+                                                    <textarea class="form-control" rows = "3" placeholder = "What's happening?"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <!-- Buttons -->
+                                    <div class = "row">
+                                        <div class = "col">
+                                            <div class = "btn-toolbar">
+                                                <div class = "btn-group">
+                                                    <button class = "btn">
+                                                        <i class = "far fa-image fa-lg"></i>
+                                                    </button>
+                                                    <button class = "btn">
+                                                        <i class = "far fa-eye fa-lg"></i>
+                                                    </button>
+                                                    <button class = "btn">
+                                                        <i class = "far fa-chart-bar fa-lg"></i>
+                                                    </button>
+                                                    <button class = "btn">
+                                                        <i class = "far fa-smile fa-lg"></i>
+                                                    </button>
+                                                    <button class = "btn">
+                                                        <i class = "far fa-calendar-alt fa-lg"></i>
+                                                    </button>
+                                                </div>
+        
+                                                <div class = "btn-group">
+                                                    <button type = "button" class = "btn btn-primary">Tweet</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <!-- Tweets -->
+                    <div class = "tweets row">
+                        <div class = "col">
+
+                            <div class = "tweet row border-bottom">
+                                <div class = "col">
+                                    Test
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class = "col-4 d-none d-lg-block">
+                <div class = "col-4 d-none d-lg-block py-2">
                     <!-- Search Box -->
                     <div class = "form-group">
                         <div class = "input-group">
@@ -32,48 +116,50 @@
                         </div>
                     </div>
 
-                        <div class = "card my-auto">
-                            <div class = "card-header">
-                                Philippines trends
-                            </div>
-                            <ol class = "list-group list-group-flush">
-                                <li class = "list-group-item">
-                                    #GlobalLiveFMxBrightWin
-                                </li>
-                                <li class = "list-group-item">
-                                    Johnny
-                                </li>
-                                <li class = "list-group-item">
-                                    #AlwaysRememberGod
-                                </li>
-                                <li class = "list-group-item">
-                                    CatchUpWithKath
-                                </li>
-                            </ol>
+                    <!-- Trends -->
+                    <div class = "card my-auto">
+                        <div class = "card-header">
+                            Philippines trends
                         </div>
-    
-                        <div class = "card my-4">
-                            <div class = "card-header">Who to follow</div>
-                            <ol class = "list-group list-group-flush">
-                                <li class = "list-group-item">
-                                    UP Diliman<br>
-                                    @Official_UPD
-                                </li>
-                                <li class = "list-group-item">
-                                    UP Los Baños<br>
-                                    @UPLBOfficial
-                                </li>
-                                <li class = "list-group-item">
-                                    UP Office of the Student Regent<br>
-                                    @uposr
-                                </li>
-                            </ol>
-                        </div>
+                        <ol class = "list-group list-group-flush">
+                            <li class = "list-group-item">
+                                #GlobalLiveFMxBrightWin
+                            </li>
+                            <li class = "list-group-item">
+                                Johnny
+                            </li>
+                            <li class = "list-group-item">
+                                #AlwaysRememberGod
+                            </li>
+                            <li class = "list-group-item">
+                                CatchUpWithKath
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Follower Suggestions -->
+                    <div class = "card my-4">
+                        <div class = "card-header">Who to follow</div>
+                        <ol class = "list-group list-group-flush">
+                            <li class = "list-group-item">
+                                UP Diliman<br>
+                                @Official_UPD
+                            </li>
+                            <li class = "list-group-item">
+                                UP Los Baños<br>
+                                @UPLBOfficial
+                            </li>
+                            <li class = "list-group-item">
+                                UP Office of the Student Regent<br>
+                                @uposr
+                            </li>
+                        </ol>
+                    </div>
                 </div>
 
                 <!-- Sidebar -->
-                <nav class="nav flex-sm-column order-sm-first">
-                    <i class = "fab fa-twitter"></i>
+                <nav class="nav flex-sm-column order-sm-first py-2 pr-5">
+                    <i class = "fab fa-twitter fa-2x"></i>
                     <a class = "nav-link active" href = "#">Home</a>
                     <a class = "nav-link" href = "#">Explore</a>
                     <a class = "nav-link" href = "#">Notifications</a>
@@ -82,7 +168,7 @@
                     <a class = "nav-link" href = "#">Lists</a>
                     <a class = "nav-link" href = "#">Profile</a>
                     <a class = "nav-link" href = "#">More</a>
-                    <button type = "button" class = "btn btn-primary">Tweet</buton>
+                    <button type = "button" class = "btn btn-primary">Tweet</button>
                 </nav>
             </div>
         </div>

@@ -15,24 +15,70 @@
 
 <body class="light">
     <div class="container">
-        <div class="row">
-            <div class="col border-left border-right">
+        <div class="row pb-5">
+            <!-- Sidebar -->
+            <nav class="col-3 nav nav-pills flex-column pt-3 pr-4 d-none d-sm-flex justify-content-between border-right">
+                <i class="fab fa-twitter fa-2x d-none d-sm-block"></i>
+                <a class="nav-item active" href="#">
+                    <i class="fas fa-home"></i> <span class="d-none d-lg-inline"> Home </span>
+                </a>
+                <a class="nav-item" href="#">
+                        <i class="fas fa-hashtag"></i> 
+                    <span class="d-none d-lg-inline">Explore</span>
+                </a>
+                <a class="nav-item" href="#">
+                        <i class="fas fa-bell"></i> 
+                    <span class="d-none d-lg-inline">Notifications</span>
+                </a>
+                <a class="nav-item" href="#">
+                        <i class="fas fa-envelope"></i> 
+                    <span class="d-none d-lg-inline">Messages</span>
+                </a>
+                <a class="nav-item" href="#">
+                        <i class="fas fa-bookmark"></i> 
+                    <span class="d-none d-lg-inline">Bookmarks</span>
+                </a>
+                <a class="nav-item" href="#">
+                        <i class="fas fa-list-alt"></i> 
+                    <span class="d-none d-lg-inline">Lists</span>
+                </a>
+                <a class="nav-item" href="#">
+                        <i class="fas fa-user"></i> 
+                    <span class="d-none d-lg-inline">Profile</span>
+                </a>
+                <a class="nav-item" href="#">
+                        <i class="fas fa-ellipsis-h"></i> 
+                    <span class="d-none d-lg-inline">More</span>
+                </a>
+                <button type="button" class="btn btn-primary rounded-pill">
+                    <i class="fas fa-feather-alt d-lg-none fa-2x"></i>
+                    <span class = "d-none d-lg-block p-2">Tweet</span>
+                </button>
+                <div class = "min-vh-50">
+                    Testing
+                </div>
+            </nav>
 
-                <div class="row border-bottom">
+            <div class="col">
+
+                <div class="row">
 
                     <div class="col">
                         <!-- Top Bar -->
-                        <div class="row border-bottom sticky-top pt-2">
-                            <div class="col">
+                        <div class="row border-bottom pt-2">
+                            <div class="col d-flex justify-content-between">
                                 <h1>
                                     Home
                                 </h1>
+                                <button class="btn p-1">
+                                    <i class="fas fa-hand-sparkles fa-lg"></i>
+                                </button>
                             </div>
                         </div>
 
                         <!-- Tweet Area -->
                         <div class="d-none d-sm-block">
-                            <div class="row py-2">
+                            <div class="row py-2 border-bottom">
                                 <!-- User Icon -->
                                 <div class="col-1">
                                     <i class="far fa-user fa-2x"></i>
@@ -41,7 +87,7 @@
                                 <!-- Vertical Separator -->
                                 <div class="col">
                                     <!-- Tweet Input -->
-                                    <div class="row">
+                                    <div class="">
                                         <div class="col">
                                             <div class="form-group">
                                                 <div class="input-group">
@@ -76,7 +122,7 @@
 
 
                                                 <div class="text-right">
-                                                    <button type="button" class="btn btn-primary">Tweet</button>
+                                                    <button type="button" class="btn btn-primary rounded-pill py-2 px-3">Tweet</button>
                                                 </div>
 
                                             </div>
@@ -94,7 +140,7 @@
                 </div>
 
                 <!-- Tweets -->
-                <div class="tweets row border-top my-2">
+                <div class="tweets row mt-sm-2">
                     <div class="col">
 
                         <div class="tweet row border-bottom">
@@ -109,23 +155,190 @@
                             </div>
                             <div class="col py-1">
                                 <div class="twitter-username">
-                                    <span class="">Rene Jotham</span> <span>@renejotham</span>
+                                    <span class="display-name">Rene Jotham</span> <span class = "username">@renejotham</span> · <span class = "time">Now</span>
                                 </div>
-                                <p class="tweet-content">
-                                    Here at house!
+                                <p class="tweet-content mb-0">
+                                    wyd
                                 </p>
-                                <div class="d-flex justify-content-between w-75">
-                                    <button class="btn">
+                                <div class="d-flex d-sm-block justify-content-between ml-n2">
+                                    <button class="btn p-1">
                                         <i class="far fa-comment fa-1x"></i>
+                                        <span class = "count-label comment-count">113.2K</span>
                                     </button>
-                                    <button class="btn">
+                                    <button class="btn p-1">
                                         <i class="fas fa-retweet fa-1x"></i>
+                                        <span class = "count-label retweet-count">364.5K</span>
                                     </button>
-                                    <button class="btn">
+                                    <button class="btn p-1">
                                         <i class="far fa-heart fa-1x"></i>
+                                        <span class = "count-label like-count">1.1M</span>
                                     </button>
-                                    <button class="btn">
+                                    <button class="btn p-1">
                                         <i class="fas fa-external-link-alt fa-1x"></i>
+                                    </button>
+                                    <button class="btn p-1">
+                                        <i class="fas fa-chart-bar fa-1x"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tweet row border-bottom">
+                            <!-- Icon display size depending on viewport size -->
+                            <div class="twitter-dp col-sm-1 col-2 py-2">
+                                <div class="d-none d-sm-block text-center">
+                                    <i class="far fa-user fa-2x"></i>
+                                </div>
+                                <div class="d-block d-sm-none text-center">
+                                    <i class="far fa-user fa-lg"></i>
+                                </div>
+                            </div>
+                            <div class="col py-1">
+                                <div class="twitter-username">
+                                    <span class="display-name">Cravings</span> <span class = "username">@cravings_phl</span> · <span class = "time">52m</span>
+                                </div>
+                                <p class="tweet-content mb-0">
+                                    Craving for some siopao...
+                                </p>
+                                <img src="assets/images/img1.jpg" class = "img-fluid my-2 rounded-lg">
+                                <div class="d-flex d-sm-block justify-content-between ml-n2">
+                                    <button class="btn p-1">
+                                        <i class="far fa-comment fa-1x"></i>
+                                        <span class = "count-label comment-count">1.1K</span>
+                                    </button>
+                                    <button class="btn p-1">
+                                        <i class="fas fa-retweet fa-1x"></i>
+                                        <span class = "count-label retweet-count">34.5K</span>
+                                    </button>
+                                    <button class="btn p-1">
+                                        <i class="far fa-heart fa-1x"></i>
+                                        <span class = "count-label like-count">97.3K</span>
+                                    </button>
+                                    <button class="btn p-1">
+                                        <i class="fas fa-external-link-alt fa-1x"></i>
+                                    </button>
+                                    <button class="btn p-1">
+                                        <i class="fas fa-chart-bar fa-1x"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tweet row border-bottom">
+                            <!-- Icon display size depending on viewport size -->
+                            <div class="twitter-dp col-sm-1 col-2 py-2">
+                                <div class="d-none d-sm-block text-center">
+                                    <i class="far fa-user fa-2x"></i>
+                                </div>
+                                <div class="d-block d-sm-none text-center">
+                                    <i class="far fa-user fa-lg"></i>
+                                </div>
+                            </div>
+                            <div class="col py-1">
+                                <div class="twitter-username">
+                                    <span class="display-name">Hello World</span> <span class = "username">@hello_world</span> · <span class = "time">18h</span>
+                                </div>
+                                <p class="tweet-content mb-0">
+                                    hello world
+                                </p>
+                                <div class="d-flex d-sm-block justify-content-between ml-n2">
+                                    <button class="btn p-1">
+                                        <i class="far fa-comment fa-1x"></i>
+                                        <span class = "count-label comment-count">1</span>
+                                    </button>
+                                    <button class="btn p-1">
+                                        <i class="fas fa-retweet fa-1x"></i>
+                                        <span class = "count-label retweet-count">3</span>
+                                    </button>
+                                    <button class="btn p-1">
+                                        <i class="far fa-heart fa-1x"></i>
+                                        <span class = "count-label like-count">4</span>
+                                    </button>
+                                    <button class="btn p-1">
+                                        <i class="fas fa-external-link-alt fa-1x"></i>
+                                    </button>
+                                    <button class="btn p-1">
+                                        <i class="fas fa-chart-bar fa-1x"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tweet row border-bottom">
+                            <!-- Icon display size depending on viewport size -->
+                            <div class="twitter-dp col-sm-1 col-2 py-2">
+                                <div class="d-none d-sm-block text-center">
+                                    <i class="far fa-user fa-2x"></i>
+                                </div>
+                                <div class="d-block d-sm-none text-center">
+                                    <i class="far fa-user fa-lg"></i>
+                                </div>
+                            </div>
+                            <div class="col py-1">
+                                <div class="twitter-username">
+                                    <span class="display-name">Albert Einstein</span> <span class = "username">@einstein_albert</span> · <span class = "time">2d</span>
+                                </div>
+                                <p class="tweet-content mb-0">
+                                    yeet
+                                </p>
+                                <div class="d-flex d-sm-block justify-content-between ml-n2">
+                                    <button class="btn p-1">
+                                        <i class="far fa-comment fa-1x"></i>
+                                        <span class = "count-label comment-count">2.5M</span>
+                                    </button>
+                                    <button class="btn p-1">
+                                        <i class="fas fa-retweet fa-1x"></i>
+                                        <span class = "count-label retweet-count">5.5M</span>
+                                    </button>
+                                    <button class="btn p-1">
+                                        <i class="far fa-heart fa-1x"></i>
+                                        <span class = "count-label like-count">1T</span>
+                                    </button>
+                                    <button class="btn p-1">
+                                        <i class="fas fa-external-link-alt fa-1x"></i>
+                                    </button>
+                                    <button class="btn p-1">
+                                        <i class="fas fa-chart-bar fa-1x"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tweet row border-bottom">
+                            <!-- Icon display size depending on viewport size -->
+                            <div class="twitter-dp col-sm-1 col-2 py-2">
+                                <div class="d-none d-sm-block text-center">
+                                    <i class="far fa-user fa-2x"></i>
+                                </div>
+                                <div class="d-block d-sm-none text-center">
+                                    <i class="far fa-user fa-lg"></i>
+                                </div>
+                            </div>
+                            <div class="col py-1">
+                                <div class="twitter-username">
+                                    <span class="display-name">Hello World</span> <span class = "username">@hello_world</span> · <span class = "time">2d</span>
+                                </div>
+                                <p class="tweet-content mb-0">
+                                    hello world
+                                </p>
+                                <div class="d-flex d-sm-block justify-content-between ml-n2">
+                                    <button class="btn p-1">
+                                        <i class="far fa-comment fa-1x"></i>
+                                        <span class = "count-label comment-count">1</span>
+                                    </button>
+                                    <button class="btn p-1">
+                                        <i class="fas fa-retweet fa-1x"></i>
+                                        <span class = "count-label retweet-count">3</span>
+                                    </button>
+                                    <button class="btn p-1">
+                                        <i class="far fa-heart fa-1x"></i>
+                                        <span class = "count-label like-count">4</span>
+                                    </button>
+                                    <button class="btn p-1">
+                                        <i class="fas fa-external-link-alt fa-1x"></i>
+                                    </button>
+                                    <button class="btn p-1">
+                                        <i class="fas fa-chart-bar fa-1x"></i>
                                     </button>
                                 </div>
                             </div>
@@ -134,9 +347,11 @@
                     </div>
                 </div>
 
+                
+
             </div>
 
-            <div class="col-4 d-none d-lg-block pt-3">
+            <div class="col-4 d-none d-lg-block pt-3 border-left">
                 <!-- Search Box -->
                 <div class="form-group">
                     <div class="input-group">
@@ -167,6 +382,9 @@
                         <li class="list-group-item">
                             CatchUpWithKath
                         </li>
+                        <li class = "list-group-item">
+                            <a href = "#">Show more</a>
+                        </li>
                     </ol>
                 </div>
 
@@ -175,36 +393,46 @@
                     <div class="card-header">Who to follow</div>
                     <ol class="list-group list-group-flush">
                         <li class="list-group-item">
-                            UP Diliman<br>
+                            UP Diliman
                             @Official_UPD
                         </li>
                         <li class="list-group-item">
-                            UP Los Baños<br>
+                            UP Los Baños
                             @UPLBOfficial
                         </li>
                         <li class="list-group-item">
-                            UP Office of the Student Regent<br>
+                            UP Office of the Student Regent
                             @uposr
+                        </li>
+                        <li class = "list-group-item">
+                            <a href = "#">Show more</a>
                         </li>
                     </ol>
                 </div>
             </div>
-
-            <!-- Sidebar -->
-            <nav class="nav flex-sm-column order-sm-first pt-3 mr-5">
-                <i class="fab fa-twitter fa-2x"></i>
-                <a class="nav-link active" href="#">
-                    <i class="fas fa-home"></i> <span class="d-none d-lg-inline"> Home</a>
-                <a class="nav-link" href="#"> <i class="fas fa-hashtag"></i> <span class="d-none d-md-inline ml-2"> Explore </span></a>
-                <a class="nav-link" href="#"> <i class="fas fa-bell"></i> <span class="d-none d-md-inline ml-2"> Notifications </span></a>
-                <a class="nav-link" href="#"> <i class="fas fa-envelope"></i> <span class="d-none d-md-inline ml-2"> Messages </span></a>
-                <a class="nav-link" href="#"> <i class="fas fa-bookmark"></i> <span class="d-none d-md-inline ml-2"> Bookmarks </span></a>
-                <a class="nav-link" href="#"> <i class="fas fa-list-alt"></i> <span class="d-none d-md-inline ml-2"> Lists </span></a>
-                <a class="nav-link" href="#"> <i class="fas fa-user"></i> <span class="d-none d-md-inline ml-2"> Profile </span></a>
-                <a class="nav-link" href="#"> <i class="fas fa-ellipsis-h"></i> <span class="d-none d-md-inline ml-2"> More </span></a>
-                <button type="button" class="btn btn-primary d-none d-md-block">Tweet</button>
-            </nav>
+            
         </div>
+
+        <!-- Bottom Bar-->
+        <div class = "row d-sm-none">
+            <div class = "col">
+                <nav class="navbar fixed-bottom navbar-light bg-light px-4 py-3">
+                    <a class="nav-item active" href="#">
+                        <i class="fas fa-home fa-lg"></i>
+                    </a>
+                    <a class="nav-item" href="#">
+                        <i class="fas fa-search fa-lg"></i>
+                    </a>
+                    <a class="nav-item" href="#">
+                        <i class="fas fa-bell fa-lg"></i>
+                    </a>
+                    <a class="nav-item" href="#">
+                        <i class="fas fa-envelope fa-lg"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
     </div>
 </body>
 

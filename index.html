@@ -1,176 +1,211 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset = "utf-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        
-        <link rel = "stylesheet" href = "css/bootstrap.css">
-        <link rel = "stylesheet" href = "css/bootstrap-grid.css">
-        <link rel = "stylesheet" href = "css/website.css">
-        <script src = "https://kit.fontawesome.com/c8605f5905.js" crossorigin = "anonymous"></script>
-        
-        <title>Home / Twitter</title>
-    </head>
-    <body class = "light">
-        <div class = "container">
-            <div class = "row">
-                <div class = "col border-left border-right py-2">
 
-                    <div class = "row border-bottom">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                        <div class = "col">
-                            <!-- Top Bar -->
-                            <div class = "row border-bottom">
-                                <div class = "col">
-                                    <h1>
-                                        Home
-                                    </h1>
-                                </div>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/website.css">
+    <script src="https://kit.fontawesome.com/c8605f5905.js" crossorigin="anonymous"></script>
+
+    <title>Home / Twitter</title>
+</head>
+
+<body class="light">
+    <div class="container">
+        <div class="row">
+            <div class="col border-left border-right">
+
+                <div class="row border-bottom">
+
+                    <div class="col">
+                        <!-- Top Bar -->
+                        <div class="row border-bottom sticky-top pt-2">
+                            <div class="col">
+                                <h1>
+                                    Home
+                                </h1>
                             </div>
+                        </div>
 
-                            <!-- Tweet Area -->
-                            <div class = "row py-3">
+                        <!-- Tweet Area -->
+                        <div class="d-none d-sm-block">
+                            <div class="row py-2">
                                 <!-- User Icon -->
-                                <div class = "col-1 d-none d-sm-block">
-                                    <div class = "col-1">
-                                        <i class = "far fa-user fa-lg"></i>
-                                    </div>
+                                <div class="col-1">
+                                    <i class="far fa-user fa-2x"></i>
                                 </div>
 
                                 <!-- Vertical Separator -->
-                                <div class = "col d-none d-sm-block">
+                                <div class="col">
                                     <!-- Tweet Input -->
-                                    <div class = "row">
-
-                                        <div class = "col">
-                                            <div class = "form-group">
-                                                <div class = "input-group flex">
-                                                    <textarea class="form-control" rows = "3" placeholder = "What's happening?"></textarea>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <textarea class="form-control border-0 p-0 mt-2" rows="3"
+                                                        placeholder="What's happening?"></textarea>
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
-                                    
+
                                     <!-- Buttons -->
-                                    <div class = "row">
-                                        <div class = "col">
-                                            <div class = "btn-toolbar">
-                                                <div class = "btn-group">
-                                                    <button class = "btn">
-                                                        <i class = "far fa-image fa-lg"></i>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="btn-toolbar d-flex justify-content-between">
+                                                <div class="">
+                                                    <button class="btn p-2">
+                                                        <i class="far fa-image fa-1x"></i>
                                                     </button>
-                                                    <button class = "btn">
-                                                        <i class = "far fa-eye fa-lg"></i>
+                                                    <button class="btn p-2">
+                                                        <i class="far fa-eye fa-1x"></i>
                                                     </button>
-                                                    <button class = "btn">
-                                                        <i class = "far fa-chart-bar fa-lg"></i>
+                                                    <button class="btn p-2">
+                                                        <i class="far fa-chart-bar fa1xg"></i>
                                                     </button>
-                                                    <button class = "btn">
-                                                        <i class = "far fa-smile fa-lg"></i>
+                                                    <button class="btn p-2">
+                                                        <i class="far fa-smile fa-1x"></i>
                                                     </button>
-                                                    <button class = "btn">
-                                                        <i class = "far fa-calendar-alt fa-lg"></i>
+                                                    <button class="btn p-2">
+                                                        <i class="far fa-calendar-alt fa-1x"></i>
                                                     </button>
                                                 </div>
-        
-                                                <div class = "btn-group">
-                                                    <button type = "button" class = "btn btn-primary">Tweet</button>
+
+
+                                                <div class="text-right">
+                                                    <button type="button" class="btn btn-primary">Tweet</button>
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
 
                             </div>
-                            
                         </div>
 
-                    </div>
 
-                    <!-- Tweets -->
-                    <div class = "tweets row">
-                        <div class = "col">
-
-                            <div class = "tweet row border-bottom">
-                                <div class = "col">
-                                    Test
-                                </div>
-                            </div>
-
-                        </div>
                     </div>
 
                 </div>
 
-                <div class = "col-4 d-none d-lg-block py-2">
-                    <!-- Search Box -->
-                    <div class = "form-group">
-                        <div class = "input-group">
-                            <div class = "input-group-prepend">
-                                <div class ="input-group-text">
-                                  <i class = "fas fa-search"></i>
+                <!-- Tweets -->
+                <div class="tweets row border-top my-2">
+                    <div class="col">
+
+                        <div class="tweet row border-bottom">
+                            <!-- Icon display size depending on viewport size -->
+                            <div class="twitter-dp col-sm-1 col-2 py-2">
+                                <div class="d-none d-sm-block text-center">
+                                    <i class="far fa-user fa-2x"></i>
+                                </div>
+                                <div class="d-block d-sm-none text-center">
+                                    <i class="far fa-user fa-lg"></i>
                                 </div>
                             </div>
-                            <input type = "text" class = "form-control" placeholder = "Search">
+                            <div class="col py-1">
+                                <div class="twitter-username">
+                                    <span class="">Rene Jotham</span> <span>@renejotham</span>
+                                </div>
+                                <p class="tweet-content">
+                                    Here at house!
+                                </p>
+                                <div class="d-flex justify-content-between w-75">
+                                    <button class="btn">
+                                        <i class="far fa-comment fa-1x"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="fas fa-retweet fa-1x"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="far fa-heart fa-1x"></i>
+                                    </button>
+                                    <button class="btn">
+                                        <i class="fas fa-external-link-alt fa-1x"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Trends -->
-                    <div class = "card my-auto">
-                        <div class = "card-header">
-                            Philippines trends
-                        </div>
-                        <ol class = "list-group list-group-flush">
-                            <li class = "list-group-item">
-                                #GlobalLiveFMxBrightWin
-                            </li>
-                            <li class = "list-group-item">
-                                Johnny
-                            </li>
-                            <li class = "list-group-item">
-                                #AlwaysRememberGod
-                            </li>
-                            <li class = "list-group-item">
-                                CatchUpWithKath
-                            </li>
-                        </ol>
-                    </div>
-
-                    <!-- Follower Suggestions -->
-                    <div class = "card my-4">
-                        <div class = "card-header">Who to follow</div>
-                        <ol class = "list-group list-group-flush">
-                            <li class = "list-group-item">
-                                UP Diliman<br>
-                                @Official_UPD
-                            </li>
-                            <li class = "list-group-item">
-                                UP Los Baños<br>
-                                @UPLBOfficial
-                            </li>
-                            <li class = "list-group-item">
-                                UP Office of the Student Regent<br>
-                                @uposr
-                            </li>
-                        </ol>
                     </div>
                 </div>
 
-                <!-- Sidebar -->
-                <nav class="nav flex-sm-column order-sm-first py-2 pr-5">
-                    <i class = "fab fa-twitter fa-2x"></i>
-                    <a class = "nav-link active" href = "#">Home</a>
-                    <a class = "nav-link" href = "#">Explore</a>
-                    <a class = "nav-link" href = "#">Notifications</a>
-                    <a class = "nav-link" href = "#">Messages</a>
-                    <a class = "nav-link" href = "#">Bookmarks</a>
-                    <a class = "nav-link" href = "#">Lists</a>
-                    <a class = "nav-link" href = "#">Profile</a>
-                    <a class = "nav-link" href = "#">More</a>
-                    <button type = "button" class = "btn btn-primary">Tweet</button>
-                </nav>
             </div>
+
+            <div class="col-4 d-none d-lg-block pt-3">
+                <!-- Search Box -->
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </div>
+
+                <!-- Trends -->
+                <div class="card my-auto">
+                    <div class="card-header">
+                        Philippines trends
+                    </div>
+                    <ol class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            #GlobalLiveFMxBrightWin
+                        </li>
+                        <li class="list-group-item">
+                            Johnny
+                        </li>
+                        <li class="list-group-item">
+                            #AlwaysRememberGod
+                        </li>
+                        <li class="list-group-item">
+                            CatchUpWithKath
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Follower Suggestions -->
+                <div class="card my-4">
+                    <div class="card-header">Who to follow</div>
+                    <ol class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            UP Diliman<br>
+                            @Official_UPD
+                        </li>
+                        <li class="list-group-item">
+                            UP Los Baños<br>
+                            @UPLBOfficial
+                        </li>
+                        <li class="list-group-item">
+                            UP Office of the Student Regent<br>
+                            @uposr
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <nav class="nav flex-sm-column order-sm-first pt-3 mr-5">
+                <i class="fab fa-twitter fa-2x"></i>
+                <a class="nav-link active" href="#">
+                    <i class="fas fa-home"></i> <span class="d-none d-lg-inline"> Home</a>
+                <a class="nav-link" href="#"> <i class="fas fa-hashtag"></i> <span class="d-none d-md-inline ml-2"> Explore </span></a>
+                <a class="nav-link" href="#"> <i class="fas fa-bell"></i> <span class="d-none d-md-inline ml-2"> Notifications </span></a>
+                <a class="nav-link" href="#"> <i class="fas fa-envelope"></i> <span class="d-none d-md-inline ml-2"> Messages </span></a>
+                <a class="nav-link" href="#"> <i class="fas fa-bookmark"></i> <span class="d-none d-md-inline ml-2"> Bookmarks </span></a>
+                <a class="nav-link" href="#"> <i class="fas fa-list-alt"></i> <span class="d-none d-md-inline ml-2"> Lists </span></a>
+                <a class="nav-link" href="#"> <i class="fas fa-user"></i> <span class="d-none d-md-inline ml-2"> Profile </span></a>
+                <a class="nav-link" href="#"> <i class="fas fa-ellipsis-h"></i> <span class="d-none d-md-inline ml-2"> More </span></a>
+                <button type="button" class="btn btn-primary d-none d-md-block">Tweet</button>
+            </nav>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

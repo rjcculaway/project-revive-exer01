@@ -7,40 +7,160 @@
     font-size: 19px;
     font-weight: bold;
     position: relative;
-    bottom: 5px;    /* Lines the text to the center of each icon. */
 }
 
-.nav-item { /* Set unhovered/inactive buttons on the nav to be colored black. */
+.inactive {
     color: black;
 }
 
-.active {
-    color: rgb(29, 161, 242);
+@keyframes nav-button-unhighlight { /* Animation for hovering a nav button. */
+    0% {
+        background-color: rgb(29, 161, 242, 0.125);
+    };
+
+    100% {
+        background-color: white;
+    };
 }
 
-@keyframes nav-item-highlight { /* Animation for hovering a nav button. */
+@keyframes nav-button-highlight { /* Animation for hovering a nav button. */
     0% {
         background-color: white;
     };
 
     100% {
-        background-color: rgb(29, 161, 242);
+        background-color: rgb(29, 161, 242, 0.125);
     };
 }
 
-.nav-item:hover { /* Adds lighlighting when the button is hovered. */
+.active:hover { /* Adds highlighting when the button is hovered. */
     border-radius: 48px;
     color: rgb(29, 161, 242);
     background-color: rgba(29, 161, 242, 0.125);
-    animation: nav-item-highlight 250ms;
+    animation: nav-button-highlight 250ms;
+    text-decoration: none;
 }
 
-.nav-item > span {  /* Adds separation between the text and the icon in the button. */
-    padding-left: 17px;
+.nav-button { /* Adds highlighting when the button is hovered. */
+    border-radius: 48px;
+    animation: nav-button-unhighlight 250ms;
+}
+
+.nav-button:hover { /* Adds highlighting when the button is hovered. */
+    border-radius: 48px;
+    color: rgb(29, 161, 242);
+    background-color: rgba(29, 161, 242, 0.125);
+    animation: nav-button-highlight 250ms;
+    text-decoration: none;
+}
+
+.nav-button > span {  /* Adds separation between the text and the icon in the button. */
+    padding-left: 10px;
 }
 
 
 #twitter-logo { /* Change the color of the Twitter logo. */
     color: rgb(29, 161, 242);
 }
+
+@keyframes nametag-unhighlight { /* Animation for unhovering a nametag. */
+    0% {
+        background-color: rgba(0, 0, 0, 0.125);
+    };
+
+    100% {
+        background-color: white;
+    };
+}
+
+@keyframes nametag-highlight { /* Animation for hovering a nametag. */
+    0% {
+        background-color: white;
+    };
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.125);
+    };
+}
+
+#nametag {
+    animation: nametag-unhighlight 125ms;
+}
+
+#nametag:hover {
+    background-color: rgba(0, 0, 0, 0.125);
+    animation: nametag-highlight 125ms;
+}
+
+/* Timeline Customizations */
+/* The following are text changes. */
+
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    line-height: 1.3125;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+#tweet-priority {
+    color: rgb(29, 161, 242);
+    position: relative;
+    bottom: 5px;
+}
+
+.display-name {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    line-height: 1.3125;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.username {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    line-height: 1.3125;
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+}
+
+.time:before { /* Add an interpunct separator before displaying the time. */
+    content: " · "
+}
+
+.time {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    line-height: 1.3125;
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+}
+
+.tweet-content {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    line-height: 1.3125;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.interaction-button {
+    color: gray;
+}
+
+.count-label {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    line-height: 1.3125;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#tweet-input { /* Modify the look of the tweet input */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+
+    outline: none !important;
+    box-shadow: none;
+}
+
+
 

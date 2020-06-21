@@ -17,45 +17,92 @@
     <div class="container">
         <div class="row pb-5 pb-sm-0">
             <!-- Sidebar -->
-            <div class = "col-3 border-right d-none d-sm-flex">
-                <nav class="nav nav-pills flex-column pt-3 pr-4 justify-content-between" style = "height: 65vh">
-                    <a class = "text-decoration-none" href = "#"><i class="fab fa-twitter fa-2x d-none d-sm-block" id = "twitter-logo"></i></a>
-                    <a class="nav-item active text-decoration-none py-2 px-3 my-1" href="#">
-                        <i class="fas fa-home fa-2x"></i> <span class="d-none d-lg-inline sidebar-link"> Home </span>
-                    </a>
-                    <a class="nav-item text-decoration-none py-2 px-3 my-1" href="#">
-                            <i class="fas fa-hashtag fa-2x fa-fw"></i> 
-                        <span class="d-none d-lg-inline sidebar-link">Explore</span>
-                    </a>
-                    <a class="nav-item text-decoration-none py-2 px-3 my-1" href="#">
-                            <i class="fas fa-bell fa-2x fa-fw"></i> 
-                        <span class="d-none d-lg-inline sidebar-link">Notifications</span>
-                    </a>
-                    <a class="nav-item text-decoration-none py-2 px-3 my-1" href="#">
-                            <i class="fas fa-envelope fa-2x fa-fw"></i> 
-                        <span class="d-none d-lg-inline sidebar-link">Messages</span>
-                    </a>
-                    <a class="nav-item text-decoration-none py-2 px-3 my-1" href="#">
-                            <i class="fas fa-bookmark fa-2x fa-fw"></i> 
-                        <span class="d-none d-lg-inline sidebar-link">Bookmarks</span>
-                    </a>
-                    <a class="nav-item text-decoration-none py-2 px-3 my-1" href="#">
-                            <i class="fas fa-list-alt fa-2x fa-fw"></i> 
-                        <span class="d-none d-lg-inline sidebar-link">Lists</span>
-                    </a>
-                    <a class="nav-item text-decoration-none py-2 px-3 my-1" href="#">
-                            <i class="fas fa-user fa-2x fa-fw"></i> 
-                        <span class="d-none d-lg-inline sidebar-link">Profile</span>
-                    </a>
-                    <a class="nav-item text-decoration-none py-2 px-3 my-1" href="#">
-                            <i class="fas fa-ellipsis-h fa-2x fa-fw"></i> 
-                        <span class="d-none d-lg-inline sidebar-link">More</span>
-                    </a>
-                    <button type="button" class="btn btn-primary font-weight-bold rounded-pill">
-                        <i class="fas fa-feather-alt d-lg-none fa-2x fa-fw p-2"></i>
-                        <span class = "d-none d-lg-block p-2">Tweet</span>
-                    </button>
-                </nav>
+            <div class="col-lg-3 col-2 border-right d-none d-sm-flex p-2">
+                <div class = "d-flex flex-column justify-content-between sticky-top m-0 p-0 vh-100">
+                    <div class = "m-0 p-0">
+                        <span class="text-decoration-none">
+                            <i class="fab fa-twitter fa-2x d-none d-sm-block ml-2" id="twitter-logo"></i>
+                        </span>
+    
+                        <nav class="d-flex flex-column p-3 justify-content-between ml-n4" style="height: 65vh">
+                            
+                            <span class="nav-item text-decoration-none my-1">
+                                <a class="nav-button p-3" href="#">
+                                    <i class="fas fa-home fa-lg"></i> <span class="d-none d-lg-inline sidebar-link"> Home
+                                    </span>
+                                </a>
+                            </span>
+                            <span class="nav-item text-decoration-none my-1">
+                                <a class="inactive nav-button p-3" href="#">
+                                    <i class="fas fa-hashtag fa-lg fa-fw"></i>
+                                    <span class="d-none d-lg-inline sidebar-link">Explore</span>
+                                </a>
+                            </span>
+                            <span class="nav-item text-decoration-none my-1">
+                                <a class="inactive nav-button p-3" href="#">
+                                    <i class="fas fa-bell fa-lg fa-fw"></i>
+                                    <span class="d-none d-lg-inline sidebar-link">Notifications</span>
+                                </a>
+                            </span>
+                            <span class="nav-item text-decoration-none my-1">
+                                <a class="inactive nav-button p-3" href="#">
+                                    <i class="fas fa-envelope fa-lg fa-fw"></i>
+                                    <span class="d-none d-lg-inline sidebar-link">Messages</span>
+                                </a>
+                            </span>
+                            <span class="nav-item text-decoration-none my-1">
+                                <a class="inactive nav-button p-3" href="#">
+                                    <i class="fas fa-bookmark fa-lg fa-fw"></i>
+                                    <span class="d-none d-lg-inline sidebar-link">Bookmarks</span>
+                                </a>
+                            </span>
+                            <span class="nav-item text-decoration-none my-1">
+                                <a class="inactive nav-button p-3" href="#">
+                                    <i class="fas fa-list-alt fa-lg fa-fw"></i>
+                                    <span class="d-none d-lg-inline sidebar-link">Lists</span>
+                                </a>
+                            </span>
+                            <span class="nav-item text-decoration-none my-1">
+                                <a class="inactive nav-button p-3" href="#">
+                                    <i class="fas fa-user fa-lg fa-fw"></i>
+                                    <span class="d-none d-lg-inline sidebar-link">Profile</span>
+                                </a>
+                            </span>
+                            <span class="nav-item text-decoration-none my-1">
+                                <a class="inactive nav-button p-3" href="#">
+                                    <i class="fas fa-ellipsis-h fa-lg fa-fw"></i>
+                                    <span class="d-none d-lg-inline sidebar-link">More</span>
+                                </a>
+                            </span>
+                            <button type="button" class="btn btn-primary font-weight-bold rounded-pill">
+                                <i class="fas fa-feather-alt d-lg-none fa-lg fa-fw px-0 py-3"></i>
+                                <span class="d-none d-lg-block p-2">Tweet</span>
+                            </button>
+                            
+                            
+                        </nav>
+                    </div>
+                    
+
+                    <!-- Name Tag -->
+                    <div class="d-none d-lg-block pl-4 pr-2 mb-4 py-2 ml-n3 rounded-pill" id="nametag">
+                        <div class="row">
+                            <div class="col-2 .align-middle m-0 px-1 pt-1">
+                                <img src="assets/images/upd.jpg" class="img-fluid rounded-circle">
+                            </div>
+                            <div class="col px-1">
+                                <span class="display-name d-block">Rene Jotham</span>
+                                <span class="username d-block">@renejotham</span>
+                            </div>
+                            <div class="col-3 py-1 p-0 m-0">
+                                <button type="button" class="btn">
+                                    <i class="fas fa-chevron-down fa-lg fa-fw p-0"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
             <div class="col">
@@ -69,7 +116,7 @@
                                 <h1>
                                     Home
                                 </h1>
-                                <button class="btn p-1">
+                                <button class="btn p-1" id="tweet-priority">
                                     <i class="fas fa-hand-sparkles fa-lg"></i>
                                 </button>
                             </div>
@@ -80,7 +127,7 @@
                             <div class="row py-2 border-bottom">
                                 <!-- User Icon -->
                                 <div class="twitter-dp col-2 pl-3 pt-2 m-0">
-                                    <img src="assets/images/upd.jpg" class = "img-fluid rounded-circle">
+                                    <img src="assets/images/upd.jpg" class="img-fluid rounded-circle">
                                 </div>
                                 <!-- Vertical Separator -->
                                 <div class="col pl-0 ml-n3">
@@ -90,7 +137,7 @@
                                             <div class="form-group">
                                                 <div class="input-group">
                                                     <textarea class="form-control border-0 p-0 mt-2" rows="3"
-                                                        placeholder="What's happening?"></textarea>
+                                                        placeholder="What's happening?" id="tweet-input"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -120,7 +167,8 @@
 
 
                                                 <div class="text-right">
-                                                    <button type="button" class="btn btn-primary font-weight-bold rounded-pill py-2 px-3">Tweet</button>
+                                                    <button type="button"
+                                                        class="btn btn-primary font-weight-bold rounded-pill py-2 px-3">Tweet</button>
                                                 </div>
 
                                             </div>
@@ -144,32 +192,33 @@
                         <div class="tweet row border-bottom py-1 pr-4">
                             <!-- Icon display size depending on viewport size -->
                             <div class="twitter-dp col-2 .align-middle ">
-                                <img src="assets/images/upd.jpg" class = "img-fluid rounded-circle py-1">
+                                <img src="assets/images/upd.jpg" class="img-fluid rounded-circle py-1">
                             </div>
                             <div class="col px-0">
                                 <div class="twitter-username">
-                                    <span class="display-name">Rene Jotham</span> <span class = "username">@renejotham</span> · <span class = "time">Now</span>
+                                    <span class="display-name">Rene Jotham</span> <span
+                                        class="username">@renejotham</span><span class="time">Now</span>
                                 </div>
                                 <p class="tweet-content mb-0">
                                     wyd
                                 </p>
                                 <div class="d-flex d-sm-block justify-content-between ml-n1">
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="far fa-comment fa-1x"></i>
-                                        <span class = "count-label comment-count">113.2K</span>
+                                        <span class="count-label comment-count">113.2K</span>
                                     </button>
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="fas fa-retweet fa-1x"></i>
-                                        <span class = "count-label retweet-count">364.5K</span>
+                                        <span class="count-label retweet-count">364.5K</span>
                                     </button>
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="far fa-heart fa-1x"></i>
-                                        <span class = "count-label like-count">1.1M</span>
+                                        <span class="count-label like-count">1.1M</span>
                                     </button>
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="fas fa-external-link-alt fa-1x"></i>
                                     </button>
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="fas fa-chart-bar fa-1x"></i>
                                     </button>
                                 </div>
@@ -179,30 +228,31 @@
                         <div class="tweet row border-bottom py-1 pr-4">
                             <!-- Icon display size depending on viewport size -->
                             <div class="twitter-dp col-2 .align-middle ">
-                                <img src="assets/images/cravings.jpg" class = "img-fluid rounded-circle py-1">
+                                <img src="assets/images/cravings.jpg" class="img-fluid rounded-circle py-1">
                             </div>
                             <div class="col px-0">
                                 <div class="twitter-username">
-                                    <span class="display-name">Cravings</span> <span class = "username">@cravings_phl</span> · <span class = "time">52m</span>
+                                    <span class="display-name">Cravings</span> <span
+                                        class="username">@cravings_phl</span><span class="time">52m</span>
                                 </div>
                                 <p class="tweet-content mb-0">
                                     Craving for some siopao...
                                 </p>
-                                <img src="assets/images/img1.jpg" class = "img-fluid my-2 rounded-lg">
+                                <img src="assets/images/img1.jpg" class="img-fluid my-2 rounded-lg">
                                 <div class="d-flex d-sm-block justify-content-between ml-n1">
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="far fa-comment fa-1x"></i>
-                                        <span class = "count-label comment-count">1.1K</span>
+                                        <span class="count-label comment-count">1.1K</span>
                                     </button>
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="fas fa-retweet fa-1x"></i>
-                                        <span class = "count-label retweet-count">34.5K</span>
+                                        <span class="count-label retweet-count">34.5K</span>
                                     </button>
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="far fa-heart fa-1x"></i>
-                                        <span class = "count-label like-count">97.3K</span>
+                                        <span class="count-label like-count">97.3K</span>
                                     </button>
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="fas fa-external-link-alt fa-1x"></i>
                                     </button>
                                 </div>
@@ -212,30 +262,31 @@
                         <div class="tweet row border-bottom py-1 pr-4">
                             <!-- Icon display size depending on viewport size -->
                             <div class="twitter-dp col-2 .align-middle ">
-                                <img src="assets/images/hello_dp.png" class = "img-fluid rounded-circle py-1">
+                                <img src="assets/images/hello_dp.png" class="img-fluid rounded-circle py-1">
                             </div>
                             <div class="col px-0">
                                 <div class="twitter-username">
-                                    <span class="display-name">Hello World</span> <span class = "username">@hello_world</span> · <span class = "time">18h</span>
+                                    <span class="display-name">Hello World</span> <span
+                                        class="username">@hello_world</span><span class="time">18h</span>
                                 </div>
                                 <p class="tweet-content mb-0">
                                     hello world
                                 </p>
-                                <img src="assets/images/helloworld.png" class = "img-fluid my-2 rounded-lg">
+                                <img src="assets/images/helloworld.png" class="img-fluid my-2 rounded-lg">
                                 <div class="d-flex d-sm-block justify-content-between ml-n1">
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="far fa-comment fa-1x"></i>
-                                        <span class = "count-label comment-count">1</span>
+                                        <span class="count-label comment-count">1</span>
                                     </button>
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="fas fa-retweet fa-1x"></i>
-                                        <span class = "count-label retweet-count">3</span>
+                                        <span class="count-label retweet-count">3</span>
                                     </button>
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="far fa-heart fa-1x"></i>
-                                        <span class = "count-label like-count">4</span>
+                                        <span class="count-label like-count">4</span>
                                     </button>
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="fas fa-external-link-alt fa-1x"></i>
                                     </button>
                                 </div>
@@ -245,29 +296,30 @@
                         <div class="tweet row border-bottom py-1 pr-4">
                             <!-- Icon display size depending on viewport size -->
                             <div class="twitter-dp col-2 .align-middle ">
-                                <img src="assets/images/albert.jpg" class = "img-fluid rounded-circle py-1">
+                                <img src="assets/images/albert.jpg" class="img-fluid rounded-circle py-1">
                             </div>
                             <div class="col px-0">
                                 <div class="twitter-username">
-                                    <span class="display-name">Albert Einstein</span> <span class = "username">@einstein_albert</span> · <span class = "time">2d</span>
+                                    <span class="display-name">Albert Einstein</span> <span
+                                        class="username">@einstein_albert</span><span class="time">2d</span>
                                 </div>
                                 <p class="tweet-content mb-0">
                                     yeet
                                 </p>
                                 <div class="d-flex d-sm-block justify-content-between ml-n1">
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="far fa-comment fa-1x"></i>
-                                        <span class = "count-label comment-count">2.5M</span>
+                                        <span class="count-label comment-count">2.5M</span>
                                     </button>
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="fas fa-retweet fa-1x"></i>
-                                        <span class = "count-label retweet-count">5.5M</span>
+                                        <span class="count-label retweet-count">5.5M</span>
                                     </button>
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="far fa-heart fa-1x"></i>
-                                        <span class = "count-label like-count">1T</span>
+                                        <span class="count-label like-count">1T</span>
                                     </button>
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="fas fa-external-link-alt fa-1x"></i>
                                     </button>
                                 </div>
@@ -277,29 +329,30 @@
                         <div class="tweet row border-bottom py-1 pr-4">
                             <!-- Icon display size depending on viewport size -->
                             <div class="twitter-dp col-2 .align-middle ">
-                                <img src="assets/images/hello_dp.png" class = "img-fluid rounded-circle py-1">
+                                <img src="assets/images/hello_dp.png" class="img-fluid rounded-circle py-1">
                             </div>
                             <div class="col px-0">
                                 <div class="twitter-username">
-                                    <span class="display-name">Hello World</span> <span class = "username">@hello_world</span> · <span class = "time">2d</span>
+                                    <span class="display-name">Hello World</span> <span
+                                        class="username">@hello_world</span><span class="time">2d</span>
                                 </div>
                                 <p class="tweet-content mb-0">
                                     first tweet!
                                 </p>
                                 <div class="d-flex d-sm-block justify-content-between ml-n1">
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="far fa-comment fa-1x"></i>
-                                        <span class = "count-label comment-count">12</span>
+                                        <span class="count-label comment-count">12</span>
                                     </button>
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="fas fa-retweet fa-1x"></i>
-                                        <span class = "count-label retweet-count">31</span>
+                                        <span class="count-label retweet-count">31</span>
                                     </button>
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="far fa-heart fa-1x"></i>
-                                        <span class = "count-label like-count">8</span>
+                                        <span class="count-label like-count">8</span>
                                     </button>
-                                    <button class="btn p-1">
+                                    <button class="interaction-button btn p-1">
                                         <i class="fas fa-external-link-alt fa-1x"></i>
                                     </button>
                                 </div>
@@ -309,7 +362,7 @@
                     </div>
                 </div>
 
-                
+
 
             </div>
 
@@ -333,27 +386,27 @@
                     </div>
                     <ol class="list-group list-group-flush">
                         <li class="list-group-item">
-                            <span class = "trend-context d-block">1 · Trending</span>
-                            <span class = "username d-block">JIKOOK</span>
-                            <span class = "trend-count d-block">328K Tweets</span>
+                            <span class="trend-context d-block">1Trending</span>
+                            <span class="username d-block">JIKOOK</span>
+                            <span class="trend-count d-block">328K Tweets</span>
                         </li>
                         <li class="list-group-item">
-                            <span class = "trend-context d-block">2 · Trending</span>
-                            <span class = "username d-block">#SolarEclipse2020</span>
-                            <span class = "trend-count d-block">87.7K Tweets</span>
+                            <span class="trend-context d-block">2Trending</span>
+                            <span class="username d-block">#SolarEclipse2020</span>
+                            <span class="trend-count d-block">87.7K Tweets</span>
                         </li>
                         <li class="list-group-item">
-                            <span class = "trend-context d-block">3 · Trending</span>
-                            <span class = "username d-block">Happy Father's Day</span>
-                            <span class = "trend-count d-block">516K Tweets</span>
+                            <span class="trend-context d-block">3Trending</span>
+                            <span class="username d-block">Happy Father's Day</span>
+                            <span class="trend-count d-block">516K Tweets</span>
                         </li>
                         <li class="list-group-item">
-                            <span class = "trend-context d-block">4 · Trending</span>
-                            <span class = "username d-block">#MOREandMORE9thWin</span>
-                            <span class = "trend-count d-block">19.5K Tweets</span>
+                            <span class="trend-context d-block">4Trending</span>
+                            <span class="username d-block">#MOREandMORE9thWin</span>
+                            <span class="trend-count d-block">19.5K Tweets</span>
                         </li>
-                        <li class = "list-group-item">
-                            <a href = "#">Show more</a>
+                        <li class="list-group-item">
+                            <a href="#">Show more</a>
                         </li>
                     </ol>
                 </div>
@@ -363,15 +416,15 @@
                     <div class="card-header">Who to follow</div>
                     <ol class="list-group list-group-flush">
                         <li class="list-group-item">
-                            <div class = "row no-gutter">
-                                <div class = "col-2 .align-middle m-0 px-1">
-                                    <img src="assets/images/upd.jpg" class = "img-fluid rounded-circle">
+                            <div class="row no-gutter">
+                                <div class="col-2 .align-middle m-0 px-1">
+                                    <img src="assets/images/upd.jpg" class="img-fluid rounded-circle">
                                 </div>
-                                <div class = "col px-1">
-                                    <span class = "display-name d-block">UP Diliman</span>
-                                    <span class = "username d-block">@Official_UPD</span>
+                                <div class="col px-1">
+                                    <span class="display-name d-block">UP Diliman</span>
+                                    <span class="username d-block">@Official_UPD</span>
                                 </div>
-                                <div class = "col-3 py-1 p-0 m-0">
+                                <div class="col-3 py-1 p-0 m-0">
                                     <button type="button" class="btn btn-secondary rounded-pill">
                                         Follow
                                     </button>
@@ -379,15 +432,15 @@
                             </div>
                         </li>
                         <li class="list-group-item">
-                            <div class = "row no-gutter">
-                                <div class = "col-2 .align-middle m-0 px-1">
-                                    <img src="assets/images/uplb.jpg" class = "img-fluid rounded-circle">
+                            <div class="row no-gutter">
+                                <div class="col-2 .align-middle m-0 px-1">
+                                    <img src="assets/images/uplb.jpg" class="img-fluid rounded-circle">
                                 </div>
-                                <div class = "col px-1">
-                                    <span class = "display-name d-block">UP Los Baños</span>
-                                    <span class = "username d-block">@UPLBOfficial</span>
+                                <div class="col px-1">
+                                    <span class="display-name d-block">UP Los Baños</span>
+                                    <span class="username d-block">@UPLBOfficial</span>
                                 </div>
-                                <div class = "col-3 py-1 p-0 m-0">
+                                <div class="col-3 py-1 p-0 m-0">
                                     <button type="button" class="btn btn-secondary rounded-pill">
                                         Follow
                                     </button>
@@ -395,33 +448,33 @@
                             </div>
                         </li>
                         <li class="list-group-item">
-                            <div class = "row no-gutter">
-                                <div class = "col-2 .align-middle m-0 px-1">
-                                    <img src="assets/images/uposr.jpg" class = "img-fluid rounded-circle">
+                            <div class="row no-gutter">
+                                <div class="col-2 .align-middle m-0 px-1">
+                                    <img src="assets/images/uposr.jpg" class="img-fluid rounded-circle">
                                 </div>
-                                <div class = "col px-1">
-                                    <span class = "display-name d-block">UP Office of the St... </span>
-                                    <span class = "username d-block">@uposr</span>
+                                <div class="col px-1">
+                                    <span class="display-name d-block">UP Office of the St... </span>
+                                    <span class="username d-block">@uposr</span>
                                 </div>
-                                <div class = "col-3 py-1 p-0 m-0">
+                                <div class="col-3 py-1 p-0 m-0">
                                     <button type="button" class="btn btn-secondary rounded-pill">
                                         Follow
                                     </button>
                                 </div>
                             </div>
                         </li>
-                        <li class = "list-group-item">
-                            <a href = "#">Show more</a>
+                        <li class="list-group-item">
+                            <a href="#">Show more</a>
                         </li>
                     </ol>
                 </div>
             </div>
-            
+
         </div>
 
         <!-- Bottom Bar-->
-        <div class = "row d-sm-none">
-            <div class = "col">
+        <div class="row d-sm-none">
+            <div class="col">
                 <nav class="navbar fixed-bottom navbar-light bg-light px-4 py-3">
                     <a class="nav-item active" href="#">
                         <i class="fas fa-home fa-lg"></i>

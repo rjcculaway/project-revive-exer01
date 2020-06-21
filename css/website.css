@@ -1,1 +1,46 @@
 /* This is the CSS file which contains Bootstrap customizations.*/
+
+/* Sidebar Customizations */
+
+.sidebar-link { /* Match the look of the sidebar links to those in Twitter.*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    position: relative;
+    bottom: 5px;    /* Lines the text to the center of each icon. */
+}
+
+.nav-item { /* Set unhovered/inactive buttons on the nav to be colored black. */
+    color: black;
+}
+
+.active {
+    color: rgb(29, 161, 242);
+}
+
+@keyframes nav-item-highlight { /* Animation for hovering a nav button. */
+    0% {
+        background-color: white;
+    };
+
+    100% {
+        background-color: rgb(29, 161, 242);
+    };
+}
+
+.nav-item:hover { /* Adds lighlighting when the button is hovered. */
+    border-radius: 48px;
+    color: rgb(29, 161, 242);
+    background-color: rgba(29, 161, 242, 0.125);
+    animation: nav-item-highlight 250ms;
+}
+
+.nav-item > span {  /* Adds separation between the text and the icon in the button. */
+    padding-left: 17px;
+}
+
+
+#twitter-logo { /* Change the color of the Twitter logo. */
+    color: rgb(29, 161, 242);
+}
+

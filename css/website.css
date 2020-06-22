@@ -2,15 +2,22 @@
 
 /* Sidebar Customizations */
 
+.dark {
+    background-color: #15202b;
+    color: white;
+    border-color: #38444d;
+}
+
 .sidebar-link { /* Match the look of the sidebar links to those in Twitter.*/
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
     font-size: 19px;
     font-weight: bold;
     position: relative;
+    color:inherit
 }
 
 .inactive {
-    color: black;
+    color: inherit;
 }
 
 @keyframes nav-button-unhighlight { /* Animation for hovering a nav button. */
@@ -19,13 +26,13 @@
     };
 
     100% {
-        background-color: white;
+        background-color: transparent;
     };
 }
 
 @keyframes nav-button-highlight { /* Animation for hovering a nav button. */
     0% {
-        background-color: white;
+        background-color: transparent;
     };
 
     100% {
@@ -199,7 +206,8 @@ h1 {
 .left-round { /* Removed the background color and rounded the left-side of the prepend. */
     border-top-left-radius: 48px;
     border-bottom-left-radius: 48px;
-    background-color: #e6ecf0;
+    border-right: none;
+    background-color: inherit;
 }
 
 .right-round { /* Round the right side of the search bar. */
@@ -212,14 +220,30 @@ h1 {
     box-shadow: none;
 }
 
+.form-control {
+    background-color: inherit;
+    color: inherit;
+}
+
 .form-control:focus {
+    background-color: inherit;
+    color: inherit;
     border-color: rgb(29, 161, 242);
     box-shadow: none;
+}
+
+.dark .list-group, .dark .list-group-item {
+    background-color: #15202b;
+    animation: list-group-unighlight 125ms;
 }
 
 .list-group, .list-group-item {
     background-color: #f5f8fa;
     animation: list-group-unighlight 125ms;
+}
+
+.dark .col {
+    border-color: inherit;
 }
 
 .card {
@@ -230,6 +254,22 @@ h1 {
 .card-header, .card-footer {
     background-color: transparent; 
     border-color: transparent;
+}
+
+/* Dark mode configuration for cards */
+.dark .card-header:first-child, .dark .card-footer:last-child {
+    background-color: #192734; 
+    border-color: inherit;
+}
+
+.card-header:first-child {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.card-footer:last-child {
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
 }
 
 @keyframes list-group-unhighlight { /* Animation for unhovering a list entry. */
@@ -254,5 +294,53 @@ h1 {
 
 .list-group-item:hover {
     background-color: #f1f4f6;
+    color: inherit;
     animation: list-group-highlight 125ms;
 }
+
+@keyframes list-group-unhighlight { /* Animation for unhovering a list entry. */
+    0% {
+        background-color: #f1f4f6;
+    };
+
+    100% {
+        background-color: #f5f8fa;
+    };
+}
+
+@keyframes list-group-highlight { /* Animation for hovering a list entry. */
+    0% {
+        background-color: #f5f8fa;
+    };
+
+    100% {
+        background-color: #f1f4f6;
+    };
+}
+
+/* Configuration for Dark Mode Animations for List Groups */
+@keyframes dark-list-group-highlight {
+    0% {
+        background-color: #202e3a;
+    };
+
+    100% {
+        background-color: inherit;
+    };
+}
+
+@keyframes dark-list-group-highlight { /* Animation for hovering a list entry. */
+    0% {
+        background-color: inherit;
+    };
+
+    100% {
+        background-color: #202e3a;
+    };
+}
+
+.dark .list-group-item:hover {
+    background-color: #202e3a;
+    color: inherit;
+    animation: dark-list-group-highlight 125ms;
+};

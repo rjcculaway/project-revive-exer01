@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/website.css">
     <script src="https://kit.fontawesome.com/c8605f5905.js" crossorigin="anonymous"></script>
+    <script src="assets/scripts/tweet.js"></script>
+    <script src="assets/scripts/dark-mode.js"></script>
 
     <title>Home / Twitter</title>
 </head>
 
-<body class="light">
+<body class="light" id="display-mode">
     <div class="container">
         <div class="row pb-5 pb-sm-0">
             <!-- Sidebar -->
@@ -81,6 +83,10 @@
                             
                             
                         </nav>
+                        <div class = "btn-group mt-5">
+                            <button type="button" class="btn btn-primary p-3" id="light-mode-button" value = "light">Light</button>
+                            <button type="button" class="btn btn-dark p-3" id="dark-mode-button" value = "dark">Dark</button>
+                        </div>
                     </div>
                     
 
@@ -174,7 +180,7 @@
 
                                                 <div class="text-right">
                                                     <button type="button"
-                                                        class="btn btn-primary font-weight-bold rounded-pill py-2 px-3">Tweet</button>
+                                                        class="btn btn-primary font-weight-bold rounded-pill py-2 px-3" id="tweet-send-button">Tweet</button>
                                                 </div>
 
                                             </div>
@@ -192,11 +198,10 @@
                 </div>
 
                 <!-- Tweets -->
-                <div class="tweets row mt-sm-2">
-                    <div class="col">
+                <div class="row mt-sm-2">
+                    <div class="col" id="tweets">
 
                         <div class="tweet row border-bottom py-1 pr-4">
-                            <!-- Icon display size depending on viewport size -->
                             <div class="twitter-dp col-2 .align-middle ">
                                 <img src="assets/images/upd.jpg" class="img-fluid rounded-circle py-1">
                             </div>
@@ -483,7 +488,7 @@
         <!-- Bottom Bar-->
         <div class="row d-sm-none">
             <div class="col">
-                <nav class="navbar fixed-bottom navbar-light bg-light px-4 py-3">
+                <nav class="navbar fixed-bottom navbar-light px-4 py-3">
                     <a class="nav-item active" href="#">
                         <i class="fas fa-home fa-lg"></i>
                     </a>

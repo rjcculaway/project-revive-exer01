@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/website.css">
     <script src="https://kit.fontawesome.com/c8605f5905.js" crossorigin="anonymous"></script>
+    <script src="assets/scripts/tweet.js"></script>
 
     <title>Home / Twitter</title>
 </head>
@@ -174,7 +175,7 @@
 
                                                 <div class="text-right">
                                                     <button type="button"
-                                                        class="btn btn-primary font-weight-bold rounded-pill py-2 px-3">Tweet</button>
+                                                        class="btn btn-primary font-weight-bold rounded-pill py-2 px-3" id="tweet-send-button">Tweet</button>
                                                 </div>
 
                                             </div>
@@ -192,11 +193,10 @@
                 </div>
 
                 <!-- Tweets -->
-                <div class="tweets row mt-sm-2">
-                    <div class="col">
+                <div class="row mt-sm-2">
+                    <div class="col" id="tweets">
 
                         <div class="tweet row border-bottom py-1 pr-4">
-                            <!-- Icon display size depending on viewport size -->
                             <div class="twitter-dp col-2 .align-middle ">
                                 <img src="assets/images/upd.jpg" class="img-fluid rounded-circle py-1">
                             </div>

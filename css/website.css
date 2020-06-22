@@ -1,1 +1,258 @@
 /* This is the CSS file which contains Bootstrap customizations.*/
+
+/* Sidebar Customizations */
+
+.sidebar-link { /* Match the look of the sidebar links to those in Twitter.*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    position: relative;
+}
+
+.inactive {
+    color: black;
+}
+
+@keyframes nav-button-unhighlight { /* Animation for hovering a nav button. */
+    0% {
+        background-color: rgb(29, 161, 242, 0.125);
+    };
+
+    100% {
+        background-color: white;
+    };
+}
+
+@keyframes nav-button-highlight { /* Animation for hovering a nav button. */
+    0% {
+        background-color: white;
+    };
+
+    100% {
+        background-color: rgb(29, 161, 242, 0.125);
+    };
+}
+
+.active:hover { /* Adds highlighting when the button is hovered. */
+    border-radius: 48px;
+    color: rgb(29, 161, 242);
+    background-color: rgba(29, 161, 242, 0.125);
+    animation: nav-button-highlight 250ms;
+    text-decoration: none;
+}
+
+.nav-button { /* Adds highlighting when the button is hovered. */
+    border-radius: 48px;
+    animation: nav-button-unhighlight 250ms;
+}
+
+.nav-button:hover { /* Adds highlighting when the button is hovered. */
+    border-radius: 48px;
+    color: rgb(29, 161, 242);
+    background-color: rgba(29, 161, 242, 0.125);
+    animation: nav-button-highlight 250ms;
+    text-decoration: none;
+}
+
+.nav-button > span {  /* Adds separation between the text and the icon in the button. */
+    padding-left: 10px;
+}
+
+
+#twitter-logo { /* Change the color of the Twitter logo. */
+    color: rgb(29, 161, 242);
+}
+
+@keyframes nametag-unhighlight { /* Animation for unhovering a nametag. */
+    0% {
+        background-color: rgba(0, 0, 0, 0.125);
+    };
+
+    100% {
+        background-color: white;
+    };
+}
+
+@keyframes nametag-highlight { /* Animation for hovering a nametag. */
+    0% {
+        background-color: white;
+    };
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.125);
+    };
+}
+
+#nametag {
+    animation: nametag-unhighlight 125ms;
+}
+
+#nametag:hover {
+    background-color: rgba(0, 0, 0, 0.125);
+    animation: nametag-highlight 125ms;
+}
+
+/* Timeline Customizations */
+/* The following are text changes. */
+
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    line-height: 1.3125;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+#tweet-priority {
+    position: relative;
+    bottom: 5px;
+}
+
+.blue-icon, #tweet-priority {
+    border-radius: 48px;
+    color: rgb(29, 161, 242);
+}
+
+.blue-icon:hover { /* Adds a elliptic faded background when the blue icon is highlighted. */
+    background-color: rgba(29, 161, 242, 0.125);
+    border-radius: 48px;
+    color: rgb(29, 161, 242);
+}
+
+.display-name {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    line-height: 1.3125;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.username {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    line-height: 1.3125;
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+}
+
+.time:before { /* Add an interpunct separator before displaying the time. */
+    content: " · "
+}
+
+.time, .trend-count {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    line-height: 1.3125;
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+}
+
+.tweet-content {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    line-height: 1.3125;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.interaction-button, .trend-context {
+    color: gray;
+}
+
+.count-label, .trend-context {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    line-height: 1.3125;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#tweet-input { /* Modify the look of the tweet input */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+
+    outline: none;
+    box-shadow: none;
+}
+
+.count-label {
+    color: inherit;
+}
+
+/* Hover Colors */
+.comment:hover {
+    color: rgb(29, 161, 242);
+}
+
+.retweet:hover {
+    color: #17bf63;
+}
+
+.like:hover {
+    color: #e0245e;
+}
+
+.interaction-button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+/* Right Sidebar Customizations */
+
+.left-round { /* Removed the background color and rounded the left-side of the prepend. */
+    border-top-left-radius: 48px;
+    border-bottom-left-radius: 48px;
+    background-color: #e6ecf0;
+}
+
+.right-round { /* Round the right side of the search bar. */
+    border-left: none;
+    border-top-right-radius: 48px;
+    border-bottom-right-radius: 48px;
+    background-color: #e6ecf0;
+
+    outline: none;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: rgb(29, 161, 242);
+    box-shadow: none;
+}
+
+.list-group, .list-group-item {
+    background-color: #f5f8fa;
+    animation: list-group-unighlight 125ms;
+}
+
+.card {
+    border-radius: 24px;
+    border-radius: 24px;
+}
+
+.card-header, .card-footer {
+    background-color: transparent; 
+    border-color: transparent;
+}
+
+@keyframes list-group-unhighlight { /* Animation for unhovering a list entry. */
+    0% {
+        background-color: #f1f4f6;
+    };
+
+    100% {
+        background-color: #f5f8fa;
+    };
+}
+
+@keyframes list-group-highlight { /* Animation for hovering a list entry. */
+    0% {
+        background-color: #f5f8fa;
+    };
+
+    100% {
+        background-color: #f1f4f6;
+    };
+}
+
+.list-group-item:hover {
+    background-color: #f1f4f6;
+    animation: list-group-highlight 125ms;
+}

@@ -237,7 +237,7 @@ h1 {
     animation: list-group-unighlight 125ms;
 }
 
-.list-group, .list-group-item {
+.list-group, .list-group-item, .card-header:first-child, .card-footer:last-child {
     background-color: #f5f8fa;
     animation: list-group-unighlight 125ms;
 }

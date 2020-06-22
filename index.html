@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="css/website.css">
     <script src="https://kit.fontawesome.com/c8605f5905.js" crossorigin="anonymous"></script>
     <script src="assets/scripts/tweet.js"></script>
+    <script src="assets/scripts/dark-mode.js"></script>
 
     <title>Home / Twitter</title>
 </head>
 
-<body class="light">
+<body class="light" id="display-mode">
     <div class="container">
         <div class="row pb-5 pb-sm-0">
             <!-- Sidebar -->
@@ -82,6 +83,10 @@
                             
                             
                         </nav>
+                        <div class = "btn-group mt-5">
+                            <button type="button" class="btn btn-primary p-3" id="light-mode-button" value = "light">Light</button>
+                            <button type="button" class="btn btn-dark p-3" id="dark-mode-button" value = "dark">Dark</button>
+                        </div>
                     </div>
                     
 

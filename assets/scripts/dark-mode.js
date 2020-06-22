@@ -4,6 +4,9 @@
 
 window.onload = init;
 
+/**
+ * Dark mode works by changing the class of the body tag from .light to .dark (and vice versa).
+ */
 function init () {
     document.getElementById('light-mode-button').onclick = light_mode;
     document.getElementById('dark-mode-button').onclick = dark_mode;
